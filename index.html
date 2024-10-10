@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Editkaro.in</h1>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-container">
+            <button class="menu-button" id="menuButton">Menu</button>
+            <nav id="navMenu" class="nav-menu">
+                <button class="filter-button" data-category="all">All</button>
+                <button class="filter-button" data-category="short-form">Short Form Videos</button>
+                <button class="filter-button" data-category="long-form">Long Form Videos</button>
+                <button class="filter-button" data-category="gaming">Gaming Videos</button>
+                <button class="filter-button" data-category="football">Football Edits</button>
+                <button class="filter-button" data-category="ecommerce">eCommerce Ads</button>
+                <button class="filter-button" data-category="documentary">Documentary Style</button>
+                <button class="filter-button" data-category="color-grading">Color Grading</button>
+                <button class="filter-button" data-category="anime">Anime Videos</button>
+                <button class="filter-button" data-category="ads">Ads</button>
+            </nav>
+        </div>
+    </header>
+    
+    <main id="portfolio">
+        <div class="video" data-category="short-form">
+            <video src="videos/short-form-video.mp4" controls></video>
+            <h3>Short Form Video Title</h3>
+        </div>
+        <div class="video" data-category="long-form">
+            <video src="videos/long-form-video.mp4" controls></video>
+            <h3>Long Form Video Title</h3>
+        </div>
+        <div class="video" data-category="gaming">
+            <video src="videos/gaming-video.mp4" controls></video>
+            <h3>Gaming Video Title</h3>
+        </div>
+        <div class="video" data-category="football">
+            <video src="videos/football-edit.mp4" controls></video>
+            <h3>Football Edit Title</h3>
+        </div>
+        <div class="video" data-category="ecommerce">
+            <video src="videos/ecommerce-ad.mp4" controls></video>
+            <h3>eCommerce Ad Title</h3>
+        </div>
+        <div class="video" data-category="documentary">
+            <video src="videos/documentary-style.mp4" controls></video>
+            <h3>Documentary Style Title</h3>
+        </div>
+        <div class="video" data-category="color-grading">
+            <video src="videos/color-grading.mp4" controls></video>
+            <h3>Color Grading Title</h3>
+        </div>
+        <div class="video" data-category="anime">
+            <video src="videos/anime-video.mp4" controls></video>
+            <h3>Anime Video Title</h3>
+        </div>
+        <div class="video" data-category="ads">
+            <video src="videos/ad-video.mp4" controls></video>
+            <h3>Ad Video Title</h3>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

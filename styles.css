@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background for contrast */
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-nav {
+    margin: 1rem 0; /* Spacing between title and nav */
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.main-nav a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.menu-container {
+    position: relative;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    background: #ff6b6b; /* Vibrant button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.menu-button:hover {
+    background: #ff4d4d; /* Darker shade on hover */
+}
+
+.nav-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.filter-button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    background: #ff6b6b; /* Vibrant button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.filter-button:hover {
+    background: #ff4d4d; /* Darker shade on hover */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video {
+    margin: 15px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.video:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+video {
+    width: 300px;
+    height: 200px;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    video {
+        width: 100%;
+    }
+
+    .menu-button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .main-nav {
+        flex-direction: column; /* Stack navigation links vertically on small screens */
+    }
+
+    .main-nav a {
+        margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
